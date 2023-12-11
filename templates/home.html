@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="static/index_styles.css">
+    </head>
+    <body>
+        {%for i in range(10)%}
+            <br>
+        {%endfor%}
+        <h1>
+            what do you need?
+        </h1>
+        <form action="/home" method="post">
+            <input type="text" name="user_input" placeholder="Example(FN or SN or BN)" required>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>

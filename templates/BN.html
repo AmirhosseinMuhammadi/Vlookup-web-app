@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="static/styles.css">
+    </head>
+    <body>
+        <a href="/home"><img src="static/download.png" alt=""></a><br><br>
+        <form action="/BN" method="post">
+            <input type="text" name = "BN" placeholder="Enter the BOM node" style="width: 50%; height: 4%; margin-left: 12.5%;">
+            <input type="submit" value="Submit" style="width: 25%; height: 4%;">
+        </form>
+        <div>
+            <table border= 1 class="t1">
+                <th><big>FN Code</big></th>
+                <th><big>SN Code</big></th>
+                {%for i in nodes1%}
+                    <tr>
+                        <td><b>{{i[0]}}</b></td>
+                        <td><b>{{i[1]}}</b></td>
+                    </tr>
+                {%endfor%}
+            </table>
+            <table border=1 class="t2">
+                <th><big>SN Code</big></th>
+                <th><big>BN Code</big></th>
+                <th><big>Component name</big></th>
+                {%for i in nodes2%}
+                    <tr>
+                        <td><b>{{i[0]}}</b></td>
+                        <td><b>{{i[1]}}</b></td>
+                        <td><b>{{i[2]}}</b></td>
+                    </tr>
+                {%endfor%}
+            </table>
+        </div>
+    </body>
+</html>
