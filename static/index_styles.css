@@ -1,0 +1,12 @@
+body{
+    background-color: crimson;
+}
+h1{
+    text-align: center;
+    color:whitesmoke;
+}
+input{
+    width: 50%;
+    height: 5%;
+    margin-left: 25%;
+}
